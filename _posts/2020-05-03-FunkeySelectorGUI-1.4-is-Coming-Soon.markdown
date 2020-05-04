@@ -1,7 +1,4 @@
 ---
-published: false
----
----
 layout: post
 title: "FunkeySelectorGUI 1.4 coming soon!"
 ---
