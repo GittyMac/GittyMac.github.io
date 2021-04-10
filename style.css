@@ -1,0 +1,38 @@
+body{
+    background-color: #FEE7D7;
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 5px;
+    color: #B2622C;
+    font-family: 'Spartan';
+    font-size: 72px;
+}
+
+h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #B2622C;
+    font-family: 'Spartan';
+    font-size: 48px;
+}
+
+p{
+    margin-top: 0px;
+    color: #B2622C;
+    font-family: 'Spartan';
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.imgButton{
+    position: relative;
+    top: 0;
+    transition: ease 0.5s;
+}
+
+.imgButton:hover{
+    top: -10px;
+    opacity: 0.6;
+}
