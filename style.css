@@ -18,6 +18,14 @@ h2{
     font-size: 48px;
 }
 
+h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #B2622C;
+    font-family: 'Spartan';
+    font-size: 24px;
+}
+
 p{
     margin-top: 0px;
     color: #B2622C;
@@ -26,13 +34,27 @@ p{
     font-size: 24px;
 }
 
+a{
+    margin-top: 0px;
+    color: #B2622C;
+    font-family: 'Spartan';
+    font-weight: semi-bold;
+    font-size: 24px;
+    text-decoration: none;
+}
+
 .imgButton{
     position: relative;
     top: 0;
     transition: ease 0.5s;
+    background-color: #FF9B59;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
 }
 
 .imgButton:hover{
     top: -10px;
     opacity: 0.6;
 }
+
