@@ -1,50 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="icon" href="https://github.com/GittyMac/GittyMac.github.io/blob/master/favicon.ico?raw=true" type="image/x-icon" />
-        <title>Lako</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Spartan&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link
-                href="https://fonts.googleapis.com/css?family=Spartan&display=swap"
-                rel="stylesheet"
-                type="text/css"
-            />
-        </noscript>
-        <link rel="preload" href="https://fonts.googleapis.com/css?family=Spartan:800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link
-                href="https://fonts.googleapis.com/css?family=Spartan:800&display=swap"
-                rel="stylesheet"
-                type="text/css"
-            />
-        </noscript>
-        <link href="https://fosstodon.org/@lakoisfun" rel="me">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:title" content="Lako" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="index.html" />
-        <meta property="og:image" content="https://github.com/GittyMac/GittyMac.github.io/blob/master/icon.png?raw=true" />
-        <meta property="og:description" content="Lako's GitHub homepage." />
-        <meta name="description" content="Lako's GitHub homepage." />
-    </head>
 
-    <body>
-        <h1>Lako.</h1>
-      
-        <p>A developer who works on applications and games.</p>
+<head>
+    <!-- 
+            Welcome to the Lako website! 
+            Have an ASCII Lako Ghost for your troubles.
 
-        <h2>Some of my projects.</h2>
-        <div style="padding: 10px; display: inline-grid; text-align: center;">
-            <a class="imgButton" href="https://github.com/GittyMac/WalletCount">WalletCount</a>
-            <a class="imgButton" href="https://github.com/GittyMac/MoClock">MoClock</a>
-            <a class="imgButton" href="https://GittyMac.GitHub.io/OpenFK/">OpenFK</a>
-            <a class="imgButton" href="https://github.com/GittyMac/FunkeySelectorGUI">FunkeySelectorGUI</a>
-            <a class="imgButton" href="https://github.com/GittyMac/Zipper">Zipper</a>
-            <a class="imgButton" href="https://github.com/GittyMac?tab=repositories">All Repositories</a>
+            ██                 ██
+            ██  █████████████  ██
+            █████           █████
+            ███               ███
+            ██                 ██
+            ██                 ██
+            ██   ████   ████   ██
+            ██   ████   ████   ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+            ██                 ██
+             ███  ███   ███  ███ 
+              █████ ██ ████████  
+               ███   ███   ███   
+        -->
+
+    <link href="Assets/favicon_l.ico" rel="icon" media="(prefers-color-scheme: light)" />
+    <link href="Assets/favicon_d.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="Assets/touchicon.png">
+
+    <title>Lako</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts, loading Spartan Font -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Spartan&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet" type="text/css" />
+    </noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Spartan:800&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css?family=Spartan:800&display=swap" rel="stylesheet"
+            type="text/css" />
+    </noscript>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#b3d9ff">
+    <meta charset="utf-8">
+
+    <!-- Social Media Embeds -->
+    <meta property="og:title" content="Lako" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:image"
+        content="https://github.com/GittyMac/GittyMac.github.io/blob/master/Assets/opengraph.png?raw=true" />
+    <meta property="og:description" content="A developer who works on applications and games." />
+
+    <!-- Search Info -->
+    <meta name="description" content="A developer who works on applications and games." />
+</head>
+
+<body>
+    <header>
+        <p align="center">
+            <img alt="The Lako Ghost logo next to the Lako wordmark." src="Assets/lakowordmark_c.svg">
+        </p>
+    </header>
+
+    <div>
+        <a class="imgButton" id="ghButton" href="https://github.com/GittyMac/">GitHub</a>
+        <a class="imgButton" style="background-color: #FF0000; color: white;"
+            href="https://www.youtube.com/@LakoIsFun/">YouTube</a>
+        <a class="imgButton" style="background-color: #fa5c5c; color: white;"
+            href="https://lakoisfun.itch.io/">Itch.io</a>
+        <a class="imgButton" style="background-color: #563ACC; color: white;" rel="me"
+            href="https://mstdn.social/@lakoisfun">Mastodon</a>
+    </div>
+
+    <p>A developer who works on applications and games. Primarily focused on C#, Java, and Python.</p>
+
+    <h1>Highlighted Projects</h1>
+
+    <div class="projectsContainer">
+        <div class="project">
+            <div class="projectImageContainer">
+                <img src="Assets/Project/OpenFK_Logo.png" alt="OpenFK Logo" />
+            </div>
+            <div class="projectDescContainer">
+                <h2>OpenFK</h2>
+                <p>A recreation of the UBFunkeys.exe executable. It was created to allow playing the game U.B. Funkeys
+                    after the 2021 Adobe Flash discontinuation. It is made from the ground up with C# and
+                    AxShockwaveFlash.</p>
+                <a class="imgButton" style="background-color: #b3ffb7;"
+                    href="https://gittymac.github.io/OpenFK/dl.html">Download</a>
+                <a class="imgButton" href="https://GittyMac.GitHub.io/OpenFK/">View the Webpage</a>
+                <a class="imgButton" href="https://GittyMac.GitHub.io/OpenFK/">View the Repository</a>
+            </div>
         </div>
-    </body>
+
+        <div class="project">
+            <div class="projectImageContainer">
+                <img src="Assets/Project/FSGUI_Logo.png" alt="FunkeySelectorGUI Logo" />
+            </div>
+            <div class="projectDescContainer">
+                <h2>FunkeySelectorGUI</h2>
+                <p>A portable tool that helps to spoof the U.B. Hub from U.B. Funkeys. It is compatible with the
+                    original unmodified game along with the Funkeys Selection Mod and OpenFK.</p>
+                <a class="imgButton" style="background-color: #b3ffb7;"
+                    href="https://github.com/GittyMac/FunkeySelectorGUI/releases/latest/download/FunkeySelectorGUI.exe">Download</a>
+                <a class="imgButton" href="https://github.com/GittyMac/FunkeySelectorGUI">View the Repository</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="projectImageContainer">
+                <img src="Assets/Project/WalletCount_Logo.png" alt="WalletCount Logo" />
+            </div>
+            <div class="projectDescContainer">
+                <h2>WalletCount</h2>
+                <p>An Android application that helps track the money in your wallet. Utilizes a Material 3 UX style.
+                </p>
+                <a class="imgButton" style="background-color: #b3ffb7;"
+                    href="https://f-droid.org/packages/com.lako.walletcount/">Download on F-Droid</a>
+                <a class="imgButton" href="https://github.com/GittyMac/WalletCount">View the Repository</a>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="projectImageContainer">
+                <img src="Assets/Project/MoClock_Logo.png" alt="MoClock Logo" />
+            </div>
+            <div class="projectDescContainer">
+                <h2>MoClock</h2>
+                <p>A basic Android clock application. Includes a clock, stopwatch, and timer. This was created to have a
+                    clock app with a modern Material 2 style.</p>
+                <a class="imgButton" style="background-color: #b3ffb7;"
+                    href="https://f-droid.org/en/packages/com.lako.moclock/">Download on F-Droid</a>
+                <a class="imgButton" href="https://github.com/GittyMac/MoClock">View the Repository</a>
+            </div>
+        </div>
+    </div>
+</body>
 
 </html>
-

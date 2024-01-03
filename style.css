@@ -1,60 +1,149 @@
-body{
-    background-color: #FEE7D7;
+/* Lako Website CSS
+   It's a bit of a mess, but it mostly works!
+   For looking here, have a small ASCII Lako Ghost for your troubles.
+
+   |___|
+   /. .\
+   |   |
+   |   |
+   \/V\/
+*/
+
+/* General Theme */
+body {
     text-align: center;
+    font-family: 'Spartan';
+    margin: 0;
 }
 
-h1{
+header {
+    background-color: #b3d9ff;
+    box-shadow: inset 0 -10px 10px -10px black;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+h1 {
     margin-bottom: 5px;
-    color: #B2622C;
     font-family: 'Spartan';
     font-size: 72px;
 }
 
-h2{
-    margin-top: 20px;
+h2 {
+    margin-top: 10px;
     margin-bottom: 5px;
-    color: #B2622C;
     font-family: 'Spartan';
     font-size: 48px;
+    word-break: break-word;
 }
 
-h3{
+h3 {
     margin-top: 20px;
     margin-bottom: 5px;
-    color: #B2622C;
     font-family: 'Spartan';
     font-size: 24px;
 }
 
-p{
+p {
     margin-top: 0px;
-    color: #B2622C;
     font-family: 'Spartan';
     font-weight: 500;
     font-size: 24px;
 }
 
-a{
+
+/* Buttons */
+a {
     margin-top: 0px;
-    color: #B2622C;
     font-family: 'Spartan';
     font-weight: semi-bold;
     font-size: 24px;
     text-decoration: none;
 }
 
-.imgButton{
+.imgButton {
+    display: inline-block;
     position: relative;
     top: 0;
     transition: ease 0.5s;
-    background-color: #FF9B59;
+    background-color: #b3d9ff;
+    color: #001c38;
     padding: 10px;
+    width: fit-content;
     margin: 10px;
+    margin-left: 0;
     border-radius: 20px;
+    white-space: nowrap;
 }
 
-.imgButton:hover{
+.imgButton:hover {
     top: -10px;
     opacity: 0.6;
 }
 
+#ghButton {
+    background-color: #24292e;
+    color: white;
+}
+
+
+/* Project boxes and a lot of hacky work */
+.projectsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #dadada;
+    width: 70%;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .project {
+        width: 90%;
+    }
+}
+
+.projectImageContainer {
+    text-align: center;
+    padding: 20px;
+}
+
+.projectImageContainer img {
+    border-radius: 20px;
+}
+
+.projectDescContainer {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Dark theme to help cool your eyes off. */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212121;
+        color: white;
+    }
+
+    .project {
+        background-color: #484848;
+    }
+
+    #ghButton {
+        background-color: white;
+        color: #24292e;
+    }
+}
